@@ -1,11 +1,11 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("assets");
-  
+  eleventyConfig.addPassthroughCopy("src/assets/");
+  eleventyConfig.addWatchTarget("src/assets/");
   return {
     dir: {
-      input: ".",
+      input: "src",
       includes: "_includes",
-      output: "_site"
+      output: "public"
     }
   };
 };
