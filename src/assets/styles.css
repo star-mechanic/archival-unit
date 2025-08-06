@@ -1,8 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
+
+
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
@@ -10,7 +8,10 @@ body {
   color: #fff;
   line-height: 1.6;
 }
-
+.wrapper { 
+  width:50%;
+  margin: 0 auto;
+}
 .landing {
   height: 100vh;
   display: flex;
@@ -37,11 +38,6 @@ body {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #000;
   border-bottom: 1px solid #333;
   padding: 1rem 2rem;
   z-index: 100;
@@ -51,6 +47,8 @@ body {
   display: flex;
   gap: 2rem;
   list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav a {
@@ -69,11 +67,9 @@ body {
 }
 
 .content {
-  margin-top: 80px;
+  margin-top: 0;
   padding: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 h1 {
