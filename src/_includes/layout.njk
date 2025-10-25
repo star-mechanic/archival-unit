@@ -9,6 +9,34 @@
 <body>
   <main>
   <div class = "wrapper">
+    <header class="header">
+      <nav>
+        <ul class="nav">
+          <li>
+            <a href="/home/" class="nav-link">
+              <svg class="nav-glyph" width="100" height="100">
+                <use href="/assets/nav-sprites.svg#home"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="/archives/" class="nav-link">
+              <svg class="nav-glyph" width="100" height="100">
+                <use href="/assets/nav-sprites.svg#archive"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="/volunteer/" class="nav-link">
+              <svg class="nav-glyph" width="100" height="100">
+                <use href="/assets/nav-sprites.svg#labor"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     {{ content | safe }}
   </div>
   </main>
